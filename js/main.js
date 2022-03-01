@@ -17,6 +17,12 @@ let monthPrice = Math.round(fullPrice / 12);
 
 
 /* Functions module */
+function ui(){
+    monthPrice= Math.round(fullPrice / 12)
+    document.querySelector(".fullPrice").innerHTML = `${new Intl.NumberFormat().format(fullPrice)} Ft`;
+    document.querySelector(".monthPrice").innerHTML = `${new Intl.NumberFormat().format(monthPrice)} Ft / hó`;
+}
+
 function formFuel(){
     let check = document.getElementById("fuelChecked").checked;
     if(check === false){
@@ -24,9 +30,7 @@ function formFuel(){
     }else{
         fullPrice = 11977170;
     }
-    monthPrice= Math.round(fullPrice / 12)
-    document.querySelector(".fullPrice").innerHTML = `${new Intl.NumberFormat().format(fullPrice)} Ft`;
-    document.querySelector(".monthPrice").innerHTML = `${new Intl.NumberFormat().format(monthPrice)} Ft / hó`;
+    ui()
 };
 
 function formPropulsion(){
@@ -34,9 +38,7 @@ function formPropulsion(){
     if(check === false){
         fullPrice += 2312670
     }
-    monthPrice= Math.round(fullPrice / 12)
-    document.querySelector(".fullPrice").innerHTML = `${new Intl.NumberFormat().format(fullPrice)} Ft`;
-    document.querySelector(".monthPrice").innerHTML = `${new Intl.NumberFormat().format(monthPrice)} Ft / hó`;
+    ui()
 }
 
 function formGear(){
@@ -44,7 +46,5 @@ function formGear(){
     if(check === false){
         fullPrice += 839470
     }
-    monthPrice= Math.round(fullPrice / 12)
-    document.querySelector(".fullPrice").innerHTML = `${new Intl.NumberFormat().format(fullPrice)} Ft`;
-    document.querySelector(".monthPrice").innerHTML = `${new Intl.NumberFormat().format(monthPrice)} Ft / hó`;
+    ui()
 }
