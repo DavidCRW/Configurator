@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <title>A4 Konfigurátor | Audi Magyarország</title>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="img/logo.png" style="max-width: 45px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Főoldal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Vásárlás</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Modellek
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">A-osztály</a></li>
+              <li><a class="dropdown-item" href="#">S-osztály</a></li>
+              <li><a class="dropdown-item" href="#">RS-osztály</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Keresés" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Keresés</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-xs-12 col-lg-8 bg-light p-0">
+
+        <!-- First heading paragraph -->
+        <div class="col text-end p-3 mt-5">
+          <h2>Motor / meghajtás kiválasztása </h2>
+          <p>Minden motor változat, fogyasztási adat*, CO₂ kibocsátás*, gyorsulás és végsebesség az Audi A4/S4 Limousine </p>
+        </div>
+
+        <!-- Slider -->
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-interval="false" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="false">
+              <img src="img/cars/A4/1.png" class="d-block w-75 center" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="false">
+              <img src="img/cars/A4/2.png" class="d-block w-75 center" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="false">
+              <img src="img/cars/A4/3.png" class="d-block w-75 center" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <!-- Price -->
+        <div class="col" style="background-color: gray;">
+          <p class="mt-5 mb-0 p-3 fullPrice">Teljes ajánlott kiskereskedelmi ár (bruttó) 11 977 170 Ft<div class="monthPrice"></div></p>
+        </div>
+
+      </div>
+
+      <!--  -->
+
+      <div class="col-xs-12 col-lg-4 ps-5 pe-5">
+
+        <div class="col mt-5 text-center">
+          <h2 class="text-uppercase lh-base p-3" style="letter-spacing: 0.1rem;">Motor /<br> meghajtás<br> változatok</h2>
+        </div>
+
+        <div class="col my-4 formFuel">
+          <h4 class="text-secondary">Üzemanyag</h4>
+          <div class="form-check">
+            <input class="form-check-input" id="fuelChecked" type="radio" value="0" name="fuel" id="flexRadioDefault1" checked>
+            <label class="form-check-label fw-bold" style="color: rgb(67, 67, 67)" for="flexRadioDefault1">
+              Benzin(mild) Hybrid
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" value="1" name="fuel" id="flexRadioDefault2">
+            <label class="form-check-label fw-bold" style="color: rgb(67, 67, 67)"  for="flexRadioDefault2">
+              Diesel(mild) Hybrid
+            </label>
+          </div>
+        </div>
+        
+        <div class="col my-4 formPropulsion">
+          <h4 class="text-secondary">Meghajtás</h4>
+          <div class="form-check">
+            <input class="form-check-input" id="PropulsionChecked" type="radio" value="0" name="propulsion" id="flexRadioDefault3" checked>
+            <label class="form-check-label fw-bold" style="color: rgb(67, 67, 67)" for="flexRadioDefault3">
+              Elsőkerék hajtás
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" value="1" name="propulsion" id="flexRadioDefault4">
+            <label class="form-check-label fw-bold" style="color: rgb(67, 67, 67)"  for="flexRadioDefault4">
+              quattro®
+            </label>
+          </div>
+        </div>
+
+        <div class="col my-4 formGear">
+          <h4 class="text-secondary">Sebességváltó</h4>
+          <div class="form-check">
+            <input class="form-check-input" id="GearChecked" type="radio" value="0" name="gear" id="flexRadioDefault5" checked>
+            <label class="form-check-label fw-bold" style="color: rgb(67, 67, 67)" for="flexRadioDefault5">
+              Kézi seb. váltó
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" value="1" name="gear" id="flexRadioDefault6">
+            <label class="form-check-label fw-bold" style="color: rgb(67, 67, 67)"  for="flexRadioDefault6">
+              Automata seb. váltó
+            </label>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+<!-- Footer -->
+<footer style="background-color: #4c4c4c">
+  <div class="container">
+  <div class="row">
+    <div class="col-0 col-md-2"></div>
+
+    <div class="col-xs-12 col-sm-3 col-md-2 mt-3">
+      <a href="config.html" class="text-decoration-none">
+      <div class="card h-100 align-items-center" style="background-color: #4c4c4c; border: 0;">
+        <img src="img/footer/card1.png" class="card-img-top" style="max-width: 50px;" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-white fs-6 fw-normal">Konfigurátor</h5>
+        </div>
+      </div>
+      </a>
+    </div>
+
+    <div class="col-xs-12 col-sm-3 col-md-2 mt-3">
+      <a href="" class="text-decoration-none">
+      <div class="card h-100 align-items-center" style="background-color: #4c4c4c; border: 0;">
+        <img src="img/footer/card2.png" class="card-img-top" style="max-width: 50px;" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-white fs-6 fw-normal">Márkakereskedések</h5>
+        </div>
+      </div>
+      </a>
+    </div>
+
+    <div class="col-xs-12 col-sm-3 col-md-2 mt-3">
+      <a href="" class="text-decoration-none">
+      <div class="card h-100 align-items-center" style="background-color: #4c4c4c; border: 0;">
+        <img src="img/footer/card3.png" class="card-img-top" style="max-width: 50px;" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-white fs-6 fw-normal">Kapcsolat</h5>
+        </div>
+      </div>
+      </a>
+    </div>
+
+    <div class="col-xs-12 col-sm-3 col-md-2 mt-3">
+      <a href="" class="text-decoration-none">
+      <div class="card h-100 align-items-center" style="background-color: #4c4c4c; border: 0;">
+        <img src="img/footer/card4.png" class="card-img-top" style="max-width: 50px;" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-white fs-6 fw-normal">myAudi</h5>
+        </div>
+      </div>
+      </a>
+    </div>
+
+    <div class="col-0 col-md-2"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-0 col-md-3"></div>
+    <div class="col-xs-12 col-sm-4 col-md-2 text-center">
+      <p><a href="" class="text-decoration-none text-white">myAudi</a></p>
+      <p><a href="" class="text-decoration-none text-white">Márkakereskedések</a></p>
+      <p><a href="" class="text-decoration-none text-white">Hírlevél</a></p>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-2 text-center">
+      <p><a href="config.html" class="text-decoration-none text-white">Konfigurátor</a></p>
+      <p><a href="" class="text-decoration-none text-white">járművek</a></p>
+      <p><a href="" class="text-decoration-none text-white">Cookie Settings</a></p>
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-2 text-center">
+      <p><a href="" class="text-decoration-none text-white">Kapcsolat</a></p>
+      <p><a href="" class="text-decoration-none text-white">Impresszum</a></p>
+      <p><a href="" class="text-decoration-none text-white">Adatvédelem</a></p>
+    </div>
+    <div class="col-0 col-md-3"></div>
+  </div>
+  </div>
+</footer>
+
+<script src="js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
